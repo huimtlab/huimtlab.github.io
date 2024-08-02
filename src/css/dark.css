@@ -1,0 +1,18 @@
+html[data-theme='dark']{
+    --text-color:white;
+    --bg: rgb(18, 18, 18);
+    --news-bg: rgb(36, 36, 41);
+    --footer-bg: rgb(36, 36, 41);
+}
+html[data-theme='bright']{
+    --text-color:black;
+    --bg:white;
+    --news-bg: rgb(242, 242, 242);
+    --footer-bg: rgb(242, 242, 242);
+}
+
+:root{
+    --news-bg: rgb(242, 242, 242);
+    --color-primary: rgb(18, 120, 175);
+    --footer-bg: rgb(242, 242, 242);
+}
