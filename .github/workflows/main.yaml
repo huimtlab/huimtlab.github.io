@@ -24,6 +24,12 @@ jobs:
 
     - name: Build
       run: npm run build
+    
+    - name: Rename dist to docs
+      run: |
+        mkdir docs
+        mv dist/* docs/
+        rm -rf dist
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.7
