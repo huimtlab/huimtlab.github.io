@@ -3,16 +3,20 @@ html[data-theme='dark']{
     --bg: rgb(18, 18, 18);
     --news-bg: rgb(36, 36, 41);
     --footer-bg: rgb(36, 36, 41);
+    --little-color: rgb(144, 144, 144);
 }
 html[data-theme='bright']{
     --text-color:black;
     --bg:white;
     --news-bg: rgb(242, 242, 242);
     --footer-bg: rgb(242, 242, 242);
+    --little-color: rgb(121, 121, 121);
 }
 
 :root{
+    --text-color:black;
     --news-bg: rgb(242, 242, 242);
     --color-primary: rgb(18, 120, 175);
     --footer-bg: rgb(242, 242, 242);
+    --little-color: rgb(121, 121, 121);
 }

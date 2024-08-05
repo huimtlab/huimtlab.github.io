@@ -1,8 +1,8 @@
 <template>
     <el-row>
         <div class="news-header" v-if="!showRealNewsHeader">
-            <p class="news-title">新闻</p>
-            <p class="news-introduction">这是我们最近的新闻</p>
+            <p class="news-title">{{ $t('news.news') }}</p>
+            <p class="news-introduction">{{ $t('news.newsIntroduction') }}</p>
         </div>
         <div class="news-header" v-if="showRealNewsHeader">
             <p class="news-title">{{ newsData[showNewsId].title }}</p>

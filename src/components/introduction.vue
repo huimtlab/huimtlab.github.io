@@ -2,12 +2,12 @@
     <!-- introduction and image -->
     <el-container>
         <el-aside class="lab_introduction">
-          <h2 class="introduction_title" style="color: var(--text-color)">编译器、模拟器和调试器</h2>
-          <p style="color: var(--text-color)">相关介绍</p>
+          <h2 class="introduction_title" style="color: var(--text-color)">{{ $t('messages.introductionTitle') }}</h2>
+          <p style="color: var(--text-color)">{{ $t('messages.introductionContent') }}</p>
         </el-aside>
         <el-main class="leader_introduction">
           <img class="leader_image" src="@/assets/homeview-main-right.png">
-          <h3 style="text-align: center;color: var(--text-color)">图片说明</h3>
+          <h3 style="text-align: center;color: var(--text-color)">{{ $t('messages.imageIntrodunction') }}</h3>
           <el-row :gutter="20">
             <el-col :span="7"></el-col>
             <el-col :span="7">
@@ -30,25 +30,20 @@
     <!-- projects -->
     <el-container style="margin-top: 40px;">
     <el-header style="padding: 0;">
-        <span style="text-align: left;color: var(--text-color);font-size: 30px;font-weight: bold;">项目</span>
+        <span style="text-align: left;color: var(--text-color);font-size: 30px;font-weight: bold;">{{ $t('messages.projects') }} </span>
+        <a href="https://github.com/orgs/huimtlab/repositories" target="_blank"><span style="text-align: left;padding-left: 20px;color: var(--little-color);font-size: 20px;">{{ $t('projects.viewAll') }} </span></a>
     </el-header>
     <el-main style="display: flex;flex-wrap: wrap;align-items: stretch;gap: 1rem 0.5rem">
-        <Project v-for="projectDataItem in projectData" :title="projectDataItem.title" :short="projectDataItem.short" :introduction="projectDataItem.introduction"></Project>
+        <Project :title="t('projects.title1')" :short="t('projects.secondTitle1')" :introduction="t('projects.introduction1')"></Project>
     </el-main>
     </el-container>
 </template>
 
 <script lang="ts" setup>
 import Project from '@/components/project.vue';
-import { ref } from 'vue'
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 
-const projectData = ref([
-    {'title': '项目标题1', 'short': '模拟器', 'introduction': '这是一个项目介绍'},
-    {'title': '项目标题2', 'short': '模拟器', 'introduction': '这是一个项目介绍'},
-    {'title': '项目标题3', 'short': '模拟器', 'introduction': '这是一个项目介绍'},
-    {'title': '项目标题4', 'short': '模拟器', 'introduction': '这是一个项目介绍'},
-    {'title': '项目标题5', 'short': '模拟器', 'introduction': '这是一个项目介绍'},
-])
 </script>
 
 <style scoped>

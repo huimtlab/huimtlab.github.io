@@ -12,7 +12,7 @@
       >
         <el-menu-item class="header-logo" index="0" style="padding: 0;color: var(--text-color);"><span style="font-size: 25px;">Huimtlab</span></el-menu-item>
         <div class="flex-grow" />
-        <el-menu-item @click="onClickNews" index="1" style="color: var(--text-color);font-size: 20px;">新闻</el-menu-item>
+        <el-menu-item @click="onClickNews" index="1" style="color: var(--text-color);font-size: 20px;">{{ $t('messages.news') }}</el-menu-item>
         <el-menu-item index="2-1" style="color: var(--text-color);font-size: 20px;">简体中文</el-menu-item>
         
         <el-menu-item index="2-2" style="color: var(--text-color);font-size: 20px;">English</el-menu-item>
@@ -40,11 +40,16 @@ import { ref, watch } from 'vue'
 import Introduction from '@/components/introduction.vue';
 import News from '@/components/news.vue';
 import { Sunny, Close } from '@element-plus/icons-vue'
+import { useI18n } from 'vue-i18n';
 
 const activeIndex = ref('0')
 const handleSelect = (key: string, keyPath: string[]) => {
   if(key in [1, 2])
     activeIndex.value = key;
+  else if(key === '2-1')
+    changeZh();
+  else if(key === '2-2')
+    changeEn();
 }
 const lightOn = ref(true);
 const bgc = "var(--bg)"
@@ -76,6 +81,16 @@ function onClickNews(){
     newsRef.value.showMainPage();
   }
 }
+// switch language
+const {locale} = useI18n(); // 语言类型对象读取
+function changeEn(){
+  locale.value = 'en';
+  localStorage.setItem('lang', 'en')
+};
+function changeZh() {
+  locale.value = 'zh';
+  localStorage.setItem('lang', 'zh')
+};
 </script>
 
 <style>

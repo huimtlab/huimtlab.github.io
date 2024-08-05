@@ -23,6 +23,5 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
     app.component(key, component)
 }
 
-import VueMarkdown from 'vue-markdown'
-
-app.use(VueMarkdown)
+import i18n from './i18n';
+app.use(i18n)
