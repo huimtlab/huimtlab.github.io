@@ -30,9 +30,7 @@ jobs:
       run: |
         pwd
         ls
-        mkdir docs
-        mv dist/* docs/
-        rm -rf dist
+        mv dist docs
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.7
