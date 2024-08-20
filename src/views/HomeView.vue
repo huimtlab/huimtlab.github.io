@@ -29,7 +29,7 @@
     <el-footer style="background: var(--footer-bg);height: 100px;">
       <div class="footer-content" style="font-size:20px;">
         © 2024 · 
-        <a :href="url" style="text-decoration: none;color: var(--color-primary)">HuimtLab</a>
+        <a :href="url" style="text-decoration: none;color: var(--color-primary)">HuimtLabs</a>
       </div>
     </el-footer>
   </el-container>
