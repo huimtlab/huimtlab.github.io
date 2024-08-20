@@ -3,10 +3,10 @@
     <el-container>
         <el-aside class="lab_introduction">
           <h2 class="introduction_title" style="color: var(--text-color)">{{ $t('messages.introductionTitle') }}</h2>
-          <p style="color: var(--text-color)">{{ $t('messages.introductionContent') }}</p>
+          <p class="introduction_content" style="color: var(--intro-color)">{{ $t('messages.introductionContent') }}</p>
         </el-aside>
         <el-main class="leader_introduction">
-          <img class="leader_image" src="@/assets/homeview-main-right.png">
+          <img class="leader_image" src="@/assets/manager.png">
           <h3 style="text-align: center;color: var(--text-color)">{{ $t('messages.imageIntrodunction') }}</h3>
           <el-row :gutter="20">
             <el-col :span="7"></el-col>
@@ -48,11 +48,15 @@ const { t } = useI18n();
 
 <style scoped>
 .lab_introduction{
-  flex:0 1 55%
+  flex:0 1 55%;
+  padding-right: 80px;
 }
 .introduction_title{
-  font-size: 32px;
+  font-size: 42px;
   margin-top: 20%;
+}
+.introduction_content{
+  font-size: 20px;
 }
 .leader_introduction{
   flex:0 1 45%
@@ -60,6 +64,7 @@ const { t } = useI18n();
 .leader_image{
   width: 100%;
   object-fit: cover;
+  padding-top: 60px;
 }
 .contact-icon{
   width: 25px;

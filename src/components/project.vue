@@ -29,7 +29,7 @@ defineProps(['title', 'short', 'introduction'])
 }
 
 .box-card {
-  width: 500px;
+  width: 800px;
   background: var(--bg);
 }
 .el-card__body{

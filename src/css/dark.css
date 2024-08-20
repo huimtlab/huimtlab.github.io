@@ -4,6 +4,7 @@ html[data-theme='dark']{
     --news-bg: rgb(36, 36, 41);
     --footer-bg: rgb(36, 36, 41);
     --little-color: rgb(144, 144, 144);
+    --intro-color: rgb(165, 165, 167);
 }
 html[data-theme='bright']{
     --text-color:black;
@@ -11,6 +12,7 @@ html[data-theme='bright']{
     --news-bg: rgb(242, 242, 242);
     --footer-bg: rgb(242, 242, 242);
     --little-color: rgb(121, 121, 121);
+    --intro-color: rgb(85, 85, 88);
 }
 
 :root{
@@ -19,4 +21,5 @@ html[data-theme='bright']{
     --color-primary: rgb(18, 120, 175);
     --footer-bg: rgb(242, 242, 242);
     --little-color: rgb(121, 121, 121);
+    --intro-color: rgb(85, 85, 88);
 }

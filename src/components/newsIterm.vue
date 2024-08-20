@@ -16,6 +16,10 @@ defineProps(['title', 'time', 'newsId'])
     font-weight: bold;
     color: var(--text-color);
 }
+.news-title:hover{
+    text-decoration: underline;
+    cursor: default;
+}
 .time-show{
     font-size: 14px;
     color: var(--text-color);

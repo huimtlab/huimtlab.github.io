@@ -10,7 +10,7 @@
         :ellipsis="false"
         @select="handleSelect"
       >
-        <el-menu-item class="header-logo" index="0" style="padding: 0;color: var(--text-color);"><span style="font-size: 25px;">Huimtlab</span></el-menu-item>
+        <el-menu-item class="header-logo" index="0" style="padding: 0;color: var(--text-color);"><span style="font-size: 25px;">Huimtlabs</span></el-menu-item>
         <div class="flex-grow" />
         <el-menu-item @click="onClickNews" index="1" style="color: var(--text-color);font-size: 20px;">{{ $t('messages.news') }}</el-menu-item>
         <el-menu-item index="2-1" style="color: var(--text-color);font-size: 20px;">简体中文</el-menu-item>
