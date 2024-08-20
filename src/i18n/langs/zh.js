@@ -8,7 +8,7 @@ export default {
     },
     projects: {
         title1: 'PySpike',
-        secondTitle1: '模拟器',
+        secondTitle1: 'RISC-V 指令集模拟器的 Python 语言集成',
         introduction1: '通过非入侵式的运行时扩展，PySpike 实现了 Spike 指令集模拟器与 Python 语言生态的无缝集成。一方面支持在 Python 侧 (例如验证脚本) 中访问 C++ 侧 Spike 模拟器的内部状态，另一方面支持将 Python 语言开发的 ISA / RoCC 插件模块和 MMIO 设备模型直接加载到原生的 Spike 模拟器中。与 Python 语言生态的紧密集成提高了在基于 Python 的验证环境中使用 Spike 模拟器的便捷性，同时也为 Spike 模拟器的功能扩展提供了更多可能性。',
         viewAll: '查看全部'
     },

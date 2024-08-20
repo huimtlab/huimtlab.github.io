@@ -10,7 +10,7 @@
         :ellipsis="false"
         @select="handleSelect"
       >
-        <el-menu-item class="header-logo" index="0" style="padding: 0;color: var(--text-color);"><span style="font-size: 25px;">Huimtlabs</span></el-menu-item>
+        <el-menu-item class="header-logo" index="0" style="padding: 0;color: var(--text-color);"><span style="font-size: 25px;">HuiMt Labs</span></el-menu-item>
         <div class="flex-grow" />
         <el-menu-item @click="onClickNews" index="1" style="color: var(--text-color);font-size: 20px;">{{ $t('messages.news') }}</el-menu-item>
         <el-menu-item index="2-1" style="color: var(--text-color);font-size: 20px;">简体中文</el-menu-item>
@@ -29,7 +29,7 @@
     <el-footer style="background: var(--footer-bg);height: 100px;">
       <div class="footer-content" style="font-size:20px;">
         © 2024 · 
-        <a :href="url" style="text-decoration: none;color: var(--color-primary)">HuimtLabs</a>
+        <a :href="url" style="text-decoration: none;color: var(--color-primary)">HuiMt Labs</a>
       </div>
     </el-footer>
   </el-container>
