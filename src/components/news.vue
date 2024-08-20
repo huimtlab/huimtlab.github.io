@@ -10,13 +10,13 @@
     </el-row>
     
     <!-- <el-row v-for="newsDataItem in newsData" v-if="!showRealNewsHeader">
-        <NewsIterm :title="newsDataItem.title" :time="newsDataItem.time" @enterNews="enterNewsPage(newsDataItem.newsId)"></NewsIterm>
+        <NewsItem :title="newsDataItem.title" :time="newsDataItem.time" @enterNews="enterNewsPage(newsDataItem.newsId)"></NewsItem>
     </el-row> -->
     <el-row v-if="!showRealNewsHeader">
-        <NewsIterm title="惠山实验室成员参加 RISC-V 中国峰会" time="August 21, 2024" @enterNews="enterNewsPage(0)"></NewsIterm>
+        <NewsItem title="惠山实验室成员参加 RISC-V 中国峰会" time="August 21, 2024" @enterNews="enterNewsPage(0)"></NewsItem>
     </el-row>
     <el-row v-if="!showRealNewsHeader">
-        <NewsIterm title="亿芯公司北京研发中心新场地启用" time="August 08, 2024" @enterNews="enterNewsPage(1)"></NewsIterm>
+        <NewsItem title="亿芯公司北京研发中心新场地启用" time="August 08, 2024" @enterNews="enterNewsPage(1)"></NewsItem>
     </el-row>
 
     <el-row v-if="showRealNewsHeader">
@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-import NewsIterm from './newsIterm.vue';
+import NewsItem from './newsItem.vue';
 import { ref } from 'vue'
 import news0 from "@/news/news0.vue"
 import news1 from "@/news/news1.vue"
